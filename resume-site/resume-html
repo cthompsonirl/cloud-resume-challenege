@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<style type="text/css">
+html *{
+  font-family: Cambria, Georgia, serif;font-weight:500;line-height: 1.3rem;
+}
+
+.parent_container{
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  background: rgb(207, 207, 207);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 20px 20px #888888;
+}
+.parent_container .upper_container{
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  background: rgb(236, 236, 236);
+}
+.name_info{
+  padding: 20px;
+}
+.name_info h1{
+  text-align: center;
+  margin: auto;
+  font-size: 46px;
+  padding: 20px;
+}
+.name_info h2{
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  
+}
+.name_info h3{
+  
+  text-align: center;
+  font-size: 14px;
+  margin: auto;
+}
+.middle_container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  background: rgb(255, 255, 255);
+}
+.middle_left_container{
+  position: relative;
+  width: 75%;
+  background: rgb(255, 255, 255);
+}
+.middle_right_container{
+  position: relative;
+  width: 25%;
+  background: rgb(236, 236, 236);
+}
+.projects{
+  padding: 20px;
+}
+.project_header{
+  font-size: 36px;
+  
+}
+.project_header h1{
+  text-align: left;
+  font-size: 36px;
+}
+.project_title h1{
+  font-size: 20px;
+}
+.project_title h2{
+  font-size: 14px;
+}
+.project_date{
+  font-size: 15px;
+}
+.work_experience{
+  padding: 20px;
+}
+.work_experience_header h1{
+  text-align: left;
+  font-size: 36px;
+}
+
+.work_title{
+  font-size: 22px;
+}
+.work_title .company{
+  font-size: 15px;
+}
+.work_description{
+  font-size: 15px;
+}
+.work_description .per_store{
+  font-style: italic;
+}
+.education{
+  padding: 20px;
+}
+.education_header h1{
+  text-align: left;
+  font-size: 36px;
+}
+.education_title{
+  font-size: 22px;
+}
+.education_date{
+  font-size: 15px;
+}
+.education_description{
+  font-size: 15px;
+}
+.skills_section{
+ 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.skills_header h1{
+  text-align: center;
+  font-size: 36px;
+}
+.skills_list h1{
+  font-size: 15px;
+}
+.counter_text h1{
+ 
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+#counter {
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+}
+</style>
+<title>Chris Thompson | Support Engineer | DevOps | SRE | Cloud Ops | Cloud Engineer</title>
+<meta name="author" content="Chris Thompson">
+<meta name="description"  content="Built on AWS, provisioned by custom Terraform IaC, Lambda Function, API Gateway.">
+<meta name="keywords" content="HTML, CSS, JavaScript, AWS, Terraform, Serverless, S3, Static Website, Python, DynamoDB">
+
+<script>
+	fetch('https://oethywtlc7.execute-api.us-east-1.amazonaws.com/prod/')
+		.then(response => response.json())
+		.then((data) => {
+			document.getElementById('counter').innerText = data
+		})
+</script>
+</head>
+
+<body>
+
+  <div class="parent_container">
+    
+    <div class="upper_container">
+      <div class="name_info">
+        <h1 class="name">Chris Thompson</h1>
+        <h2 class="title">AWS Certified Solutions Architect Professional&nbsp;&nbsp;|&nbsp;&nbsp;DevOps&nbsp;&nbsp;|&nbsp;&nbsp;Site Reliability</h2>
+        <h3 class="contact_info">Cork,&nbsp;&nbsp;Ireland&nbsp;&nbsp;|&nbsp;&nbsp;christopher9687@gmail.com</h3>
+      </div>
+    </div>
+    
+    
+    <div class="middle_container">
+      <div class="middle_left_container">
+        <div class="projects">
+          <div class="project_header">
+            <h1>Projects</h1>
+          </div>
+          <div class="project_title">
+            <h1 class="project_title">Cloud Resume Challenge <span class='project_date'>| May 2022</span></h1>
+            <h2 class="project_description">Built static website using multiple AWS services. S3 buckets, IAM roles/policies, Lambda function, DynamoDB table, API Gateway, Cloudfront Distribution, Route53 configuration, ACM Certificate setup, AWS SAM Infrastructure as Code (IaC) used for all pieces. CI/CD triggered when any code change is pushed, using GitHub Actions to test and deploy.</h2>
+            <h2 class="project_description">Please see the code in my  <a href="https://github.com/cthompsonirl/cloud-resume-challenge" target="_blank">GitHub Repo</a> and feel free to browse my other projects.</h2>
+            <h2 class="project_description">Learn about this project's behind the scenes details from the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a> Website.</h2>
+          </div>
+        </div>
+        <div class="work_experience">
+          <div class="work_experience_header">
+            <h1>Professional Experience</h1>
+          </div>
+          
+          <div class="work_experience_role">
+            <h1 class="work_title">Senior Technical Support Engineer <span class='company'>| Rubrik&nbsp;&nbsp;(2018 - Present)</span></h1>
+            <h2 class="work_description">- Provide award winning customer service to Rubrik customers worldwide. Supporting Rubrik CDM appliance and Polaris SaaS platform..</h2>
+            <h2 class="work_description">- EMEA Tech Lead for Cloud technologies (AWS / Azure) and Rubrik's cloud components, e.g archival and cloud based DR.</h2>
+            <h2 class="work_description">- Troubleshoot and resolve customer issues involving rubrik interactions with various technologies including AWS, Azure, VMware, SQL, Linux, Windows etc.</h2>
+            <h2 class="work_description">- Handle customer escalations and work closely with development team.</h2>
+            <h2 class="work_description">- Add additional knowledge in the form of knowledge base tech notes and articles based on worked issues.</h2>
+            <h2 class="work_description">- Received several perfect Customer Satisfaction surveys.</h2>
+          </div>
+          
+          <div class="work_experience_role">
+            <br />
+            <h1 class="work_title">Senior Technical Analyst <span class='company'>| Dell EMC&nbsp;&nbsp;(2017-2018)</span></h1>
+            <h2 class="work_description">- Promoted from previous Technical Support Engineer role to Senior Technical Analyst.</h2>
+            <h2 class="work_description">- Mentor new hires (GSAP) and get them up to speed on understanding the product and procedures inside Dell EMC. </h2>
+            <h2 class="work_description">- EMEA Coach, providing assistance to colleagues on advanced technical issues.</h2>
+            <h2 class="work_description">- Reviewing backlog (20+ days old) cases and giving accurate recommendations towards resolution.</h2>
+          </div>
+          
+          <div class="work_experience_role">
+            <br />
+            <h1 class="work_title">Technical Support Engineer <span class='company'>| Dell EMC&nbsp;&nbsp;(2015-2017)</span></h1>
+            <h2 class="work_description">- Take ownership of customer issues reported and see problems through to resolution.</h2>
+            <h2 class="work_description">- Resolved critical Data Unavailability (DU) cases for large enterprise customers and escalated others to the recovery team.</h2>
+            <h2 class="work_description">- Troubleshooting numerous technical areas under Isilon – SMB, NFS, Hardware, File Systems, etc. (Specialized in NFS and Networking).</h2>
+            <h2 class="work_description">- Progressed from the medium to the highest mark on performance reviews prior to promotion to Senior Technical Analyst.</h2>
+          </div>
+
+        </div>
+
+        <div class="education">
+          <div class="education_header">
+            <h1>Education</h1>
+          </div>
+          <div class="education_title">
+            <h1 class="education_title">Higher Diploma in Applied Computing Technology <span class='education_date'>University College Cork</span></h1>
+            <h2 class="education_description">- 2014-2015</h2>
+            <h2 class="education_description">- Intense graduate studies in Computer Science including modules in Programming, Database Design and Administration, Web Development, Systems Organization, Assembly Language and Networking.</h2>
+          </div>
+          <div class="education_title">
+            <h1 class="education_title">B.C.L.G., Law and German <span class='education_date'>University College Cork Cork</span></h1>
+            <h2 class="education_description">- 2005-2009</h2>
+            <h2 class="education_description">- Joint honours undergraduate degree in Law and German. Included Erasmus year spent at Friedrich-Alexander-Universität Erlangen-Nürnberg Erlangen, Germany</h2>
+          </div>
+        </div>
+
+      </div>
+      <div class="middle_right_container">
+        <div class="skills_section">
+          <div class="skills_header">
+            <h1>Skills</h1>
+          </div>
+          <div class="skills_list">
+            <h1>Troubleshooting</h1>
+            <h1>Cloud Architecture</h1>
+            <h1>Linux</h1>
+            <h1>Terraform</h1>
+            <h1>Docker</h1>
+            <h1>Git | GitHub</h1>
+            <h1>AWS | Cloud</h1>
+            <h1>Lambda | Serverless</h1>
+            <h1>Python</h1>
+            <h1>SQL</h1>
+            <h1>Critical Thinking</h1>
+            <h1>Cloudformation</h1>
+            <h1>Javascript</h1>
+            <h1>VSCode</h1>
+            <h1>CI/CD</h1>
+            <h1>DynamoDB</h1>
+            <h1>German</h1>
+            <h1>Japanese</h1>
+          </div>
+        </div>
+        <div data-iframe-width="250" data-iframe-height="250" data-share-badge-id="03d495ef-f106-47c2-a913-84e1646217fc" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="250" data-iframe-height="250" data-share-badge-id="7b08e2c8-4c57-41d3-af68-7ddc5b190273" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div class="counter_text">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <h1>You are visitor:</h1>
+          <div id="counter">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

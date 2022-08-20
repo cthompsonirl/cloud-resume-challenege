@@ -10,6 +10,8 @@ resource "aws_dynamodb_table" "dynamodb_table" {
   }
 }
 
+#Could potentially remove this and refactor to set up in lambda instead so View_Count isn't reset with reach apply
+
 resource "aws_dynamodb_table_item" "counter" {
   table_name = aws_dynamodb_table.dynamodb_table.name
   hash_key   = aws_dynamodb_table.dynamodb_table.hash_key

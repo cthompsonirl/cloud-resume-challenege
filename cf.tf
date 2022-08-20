@@ -1,4 +1,5 @@
 # CloudFront Origin Access Identity and Distribution
+#TTL set to 0 to act as invalidation
 resource "aws_cloudfront_origin_access_identity" "cf_oai" {
   comment = "OAI for ${var.endpoint}"
 }
