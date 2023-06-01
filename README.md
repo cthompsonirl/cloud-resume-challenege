@@ -1,4 +1,4 @@
-# cloud-resume-challenege
+# cloud-resume-challenge
 This project is my online resume. 
 
 It consists of a static web page, serving simple html & css delivered from an S3 bucket using CloudFront and Route 53 for the frontend and secured using ACM.
