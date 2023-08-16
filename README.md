@@ -7,4 +7,4 @@ The serverless backend consists of an API Gateway endpoint calling a Lambda func
 
 Github in combination with Terraform Cloud is used for version control and for the CI/CD pipeline.
 
-You can visit my website here which is the result of this project: https://christhompsoncloud.com/
+You can visit my website here which is the result of this project: https://christhompsoncloud.com/ and my blog post detailing my experience [here](https://dev.to/cthompsonirl/into-the-cloud-embarking-on-a-journey-of-skill-building-and-self-discovery-while-also-attempting-the-cloud-resume-challenge-cdd)
